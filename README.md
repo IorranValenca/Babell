@@ -1,5 +1,9 @@
 # Babell
 
+<div align="center">
+  <img src="BABELL.png" alt="Babell Logo" width="200">
+</div>
+
 A modern, intelligent terminal that understands natural language commands and converts them to system commands. Enhanced with comprehensive programming and development features.
 
 ## Enhanced Programming Features

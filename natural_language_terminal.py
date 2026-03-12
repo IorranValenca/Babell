@@ -20,6 +20,17 @@ class NaturalLanguageTerminal:
         self.root.geometry("1000x700")
         self.root.configure(bg='#1e1e1e')
         
+        # Set window icon
+        try:
+            from icon_utils import set_window_icon
+            set_window_icon(self.root, "BABELL.png")
+        except ImportError:
+            # Fallback: try basic icon loading
+            try:
+                self.root.iconbitmap('BABELL.png')
+            except:
+                pass  # Use default icon if loading fails
+        
         # Initialize components
         self.parser = NaturalLanguageParser()
         self.executor = CommandExecutor()
