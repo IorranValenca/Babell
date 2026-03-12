@@ -91,16 +91,24 @@ A modern, intelligent terminal that understands natural language commands and co
 
 ### Running the Terminal
 
-1. **Download all files** to a folder
-2. **Open PowerShell** in that folder
-3. **Run the application**:
-   ```powershell
-   python main.py
-   ```
-   Or use the batch script:
-   ```powershell
-   scripts\run_terminal.bat
-   ```
+#### 🎯 **Recommended Methods (Easiest):**
+```powershell
+# Double-click any of these files:
+launch_babell.py         # Enhanced Python launcher (recommended)
+launch_babell.bat        # Enhanced Windows launcher with graphics
+```
+
+#### ⚙️ **Alternative Methods:**
+```powershell
+python main.py           # Standard method
+python launch_babell.py  # Enhanced launcher from command line
+scripts\run_terminal.bat # Original batch script
+```
+
+#### 💡 **Troubleshooting:**
+- If double-clicking `.py` files opens a text editor instead of running Python, use the `.bat` files
+- Make sure Python is installed and added to your system PATH
+- The enhanced launchers provide better error messages and stay open for debugging
 
 ## Project Structure
 

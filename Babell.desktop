@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Babell Terminal
+Comment=Natural Language Programming Terminal
+Exec=python launch_babell.py
+Icon=assets/BABELL.png
+Terminal=true
+Type=Application
+Categories=Development;Terminal;
+StartupWMClass=babell
