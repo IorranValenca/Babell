@@ -15,8 +15,11 @@ if errorlevel 1 (
 echo Python found. Starting terminal...
 echo.
 
+REM Change to project root directory
+cd /d "%~dp0\.."
+
 REM Run the natural language terminal
-python natural_language_terminal.py
+python main.py
 
 REM Keep window open if there's an error
 if errorlevel 1 (

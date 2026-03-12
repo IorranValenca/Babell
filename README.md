@@ -1,7 +1,7 @@
 # Babell
 
 <div align="center">
-  <img src="BABELL.png" alt="Babell Logo" width="200">
+  <img src="assets/BABELL.png" alt="Babell Logo" width="200">
 </div>
 
 A modern, intelligent terminal that understands natural language commands and converts them to system commands. Enhanced with comprehensive programming and development features.
@@ -95,8 +95,46 @@ A modern, intelligent terminal that understands natural language commands and co
 2. **Open PowerShell** in that folder
 3. **Run the application**:
    ```powershell
-   python natural_language_terminal.py
+   python main.py
    ```
+   Or use the batch script:
+   ```powershell
+   scripts\run_terminal.bat
+   ```
+
+## Project Structure
+
+```
+Babell/
+├── main.py                     # Main entry point
+├── README.md                   # This file
+├── requirements.txt            # Dependencies
+├── .gitignore                 # Git ignore rules
+├── src/                       # Source code
+│   ├── __init__.py
+│   ├── core/                  # Core functionality
+│   │   ├── __init__.py
+│   │   ├── natural_language_terminal.py    # Main GUI application
+│   │   ├── natural_language_parser.py      # Command parsing engine
+│   │   ├── command_executor.py             # Safe command execution
+│   │   └── advanced_nl_parser.py           # Enhanced parser
+│   └── utils/                 # Utility modules
+│       ├── __init__.py
+│       ├── programming_utilities.py        # Programming-specific utilities
+│       └── icon_utils.py                   # Icon loading utilities
+├── tests/                     # Test files
+│   ├── test_terminal.py
+│   └── test_programming_features.py
+├── config/                    # Configuration files
+│   ├── config.json
+│   └── terminal_settings.json
+├── assets/                    # Images and icons
+│   └── BABELL.png
+├── docs/                      # Documentation
+│   └── GITHUB_SETUP.md
+└── scripts/                   # Utility scripts
+    └── run_terminal.bat
+```
 
 ### Quick Start
 
