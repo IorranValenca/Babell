@@ -284,17 +284,23 @@ Type 'help' for more information or use the Help button.
         
         if command:
             # Show parsed command if it's different from input
-            if command.lower() != user_input.lower():
+            if command.lower() != user_input.lower() and not command.startswith('echo'):
                 self.append_output(f"🔄 Interpreted as: {command}\\n", 'info')
             
-            # Show confidence level
-            if confidence < 1.0:
+            # Show confidence level for uncertain commands
+            if confidence < 0.8:
                 confidence_text = f"🎯 Confidence: {confidence:.0%}\\n"
                 self.append_output(confidence_text, 'warning')
             
-            # Execute command
-            result = self.executor.execute_command(command)
-            self.display_command_result(result)
+            # Handle special display commands (like folder listings)
+            if command.startswith('echo Multiple folders found') or command.startswith('echo Listing project folders'):
+                self.append_output(f"🔍 {command.replace('echo ', '')}\\n", 'info')
+            elif command.startswith('echo Folder') and 'not found' in command:
+                self.append_output(f"❌ {command.replace('echo ', '')}\\n", 'error')
+            else:
+                # Execute normal command
+                result = self.executor.execute_command(command)
+                self.display_command_result(result)
             
         else:
             self.append_output("❌ Could not understand the command.\\n", 'error')

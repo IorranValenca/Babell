@@ -15,7 +15,11 @@ A modern, intelligent terminal that understands natural language commands and co
 **Code Execution**: "run python file script.py", "run node file app.js"
 **File Templates**: "create html file index", "create css file styles"
 **Build Tools**: "build for production", "run dev server"
-**Code Analysis**: Smart project detection and suggestions
+**Smart Workspace Navigation**: Intelligent folder finding and project detection
+- "work in folder MyReactApp" → Finds and navigates to MyReactApp folder anywhere on system  
+- "show my projects" → Lists all detected programming projects
+- "find folder NodeJS" → Searches and shows all matching folders
+- Auto-detects projects by looking for package.json, .git, requirements.txt, etc.
 
 ## Features
 
@@ -61,8 +65,11 @@ A modern, intelligent terminal that understands natural language commands and co
 - **Build & Development**: "build for production", "run dev server"
 - **IDE Integration**: "open in vscode app.js"
 
-### Navigation
+### Navigation & Workspace Management
 - Change directory: "go to Documents", "navigate to Desktop"
+- **Smart Folder Finding**: "find folder MyProject", "work in folder ReactApp"
+- **Project Detection**: "show my projects", "list my workspaces"  
+- **Auto-Navigation**: "find and work in NodeProject" (auto-finds and navigates)
 - Go up: "go back", "up one level"
 - Go home: "go home"
 
@@ -154,6 +161,7 @@ Babell/
 
 ## Examples
 
+### Basic Operations
 ```
 User: create a file called shopping.txt
 Interpreted as: touch "shopping.txt"
@@ -162,7 +170,38 @@ Status: Command executed successfully.
 User: go to Documents folder
 Interpreted as: cd "Documents"
 Output: Changed directory to: C:\Users\User\Documents
+```
 
+### Smart Folder Navigation  
+```
+User: work in folder MyReactApp
+🔍 Found 2 folders matching 'MyReactApp':
+📁 C:\Users\User\Desktop\MyReactApp
+📁 C:\Users\User\Projects\MyReactApp
+
+User: find and work in Desktop
+📁 Navigating to: C:\Users\User\Desktop
+
+User: show my projects
+🚀 Found 15 project folders:
+📁 C:\Users\User\Desktop\ReactApp
+📁 C:\Users\User\Desktop\NodeProject
+```
+
+### Programming Commands
+```
+User: git status
+Output: On branch main, nothing to commit, working tree clean
+
+User: npm install express  
+Output: + express@4.18.2 added 57 packages...
+
+User: create react app mynewapp
+Output: Creating a new React app in C:\mynewapp...
+```
+
+### File Operations
+```
 User: list all files
 Interpreted as: dir
 Output: [Directory listing...]
