@@ -1,0 +1,77 @@
+{
+  "terminal_settings": {
+    "theme": "dark",
+    "window_size": {
+      "width": 1000,
+      "height": 700
+    },
+    "fonts": {
+      "mono_family": "Consolas",
+      "mono_size": 10,
+      "ui_family": "Segoe UI", 
+      "ui_size": 9
+    },
+    "colors": {
+      "background": "#1e1e1e",
+      "foreground": "#ffffff", 
+      "accent": "#0078d4",
+      "success": "#16c60c",
+      "warning": "#ffb900",
+      "error": "#d13438",
+      "input_bg": "#2d2d30",
+      "output_bg": "#0c0c0c"
+    },
+    "behavior": {
+      "auto_suggestions": true,
+      "command_timeout": 30,
+      "save_history": true,
+      "max_history_items": 100,
+      "show_confidence": true,
+      "safe_mode": true
+    }
+  },
+  "parser_settings": {
+    "confidence_threshold": 0.7,
+    "max_suggestions": 3,
+    "enable_contextual_parsing": true,
+    "enable_fuzzy_matching": true,
+    "custom_patterns": {
+      "note": "Add your custom regex patterns here",
+      "example_pattern": "example_command"
+    }
+  },
+  "safety_settings": {
+    "enabled": true,
+    "block_dangerous_commands": true,
+    "require_confirmation_for": [
+      "delete",
+      "format", 
+      "shutdown",
+      "restart"
+    ],
+    "whitelist_directories": [
+      "%USERPROFILE%\\Documents",
+      "%USERPROFILE%\\Desktop", 
+      "%USERPROFILE%\\Downloads"
+    ]
+  },
+  "advanced_features": {
+    "ai_integration": {
+      "enabled": false,
+      "provider": "none",
+      "api_key": "",
+      "model": "",
+      "note": "Future feature for AI model integration"
+    },
+    "plugins": {
+      "enabled": false,
+      "plugin_directory": "./plugins",
+      "note": "Future feature for plugin system"
+    },
+    "scripting": {
+      "enabled": false,
+      "script_directory": "./scripts", 
+      "note": "Future feature for command scripting"
+    }
+  }
+}
