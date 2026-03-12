@@ -1,38 +1,38 @@
 # Babell
 
-A modern, intelligent terminal that understands natural language commands and converts them to system commands. **Now with enhanced programming & development features!**
+A modern, intelligent terminal that understands natural language commands and converts them to system commands. Enhanced with comprehensive programming and development features.
 
-## 🆕 **Enhanced Programming Features**
+## Enhanced Programming Features
 
-🔧 **Git Operations**: "git status", "git add all", "git commit with message 'fix'"
-📦 **Package Management**: "npm install express", "pip install requests"  
-🏗️ **Project Creation**: "create react app myproject", "create python file main"
-🐳 **Docker Support**: "docker build myapp", "docker run container"
-💻 **Code Execution**: "run python file script.py", "run node file app.js"
-🎨 **File Templates**: "create html file index", "create css file styles"
-⚡ **Build Tools**: "build for production", "run dev server"
-🔍 **Code Analysis**: Smart project detection and suggestions
+**Git Operations**: "git status", "git add all", "git commit with message 'fix'"
+**Package Management**: "npm install express", "pip install requests"  
+**Project Creation**: "create react app myproject", "create python file main"
+**Docker Support**: "docker build myapp", "docker run container"
+**Code Execution**: "run python file script.py", "run node file app.js"
+**File Templates**: "create html file index", "create css file styles"
+**Build Tools**: "build for production", "run dev server"
+**Code Analysis**: Smart project detection and suggestions
 
 ## Features
 
-🤖 **Natural Language Processing**: Type commands in plain English
+**Natural Language Processing**: Type commands in plain English
 - "create a file called notes.txt" → `touch "notes.txt"`
 - "go to Documents folder" → `cd "Documents"`
 - "list all files" → `dir`
 - "copy file.txt to backup.txt" → `copy "file.txt" "backup.txt"`
 
-🎨 **Modern GUI Interface**: Dark theme with syntax highlighting
+**Modern GUI Interface**: Dark theme with syntax highlighting
 - Clean, professional interface
 - Color-coded output (success, error, warnings)
 - Command history with up/down arrows
 - Real-time directory tracking
 
-🛡️ **Safety Features**: Built-in command validation
+**Safety Features**: Built-in command validation
 - Dangerous command detection
 - Confirmation for risky operations
 - Safe command execution environment
 
-📚 **Smart Suggestions**: Helpful hints and alternatives
+**Smart Suggestions**: Helpful hints and alternatives
 - Auto-complete suggestions
 - Command confidence scoring
 - Alternative command recommendations
@@ -47,7 +47,7 @@ A modern, intelligent terminal that understands natural language commands and co
 - Move files: "move file.txt to Documents"
 - Rename files: "rename old.txt to new.txt"
 
-### 🔧 Programming & Development Operations
+### Programming & Development Operations
 - **Git**: "git status", "git add all", "git commit with message 'update'"
 - **NPM**: "npm install express", "npm run build", "npm test"
 - **Python**: "run python file main.py", "pip install requests", "activate python venv"
@@ -105,21 +105,21 @@ A modern, intelligent terminal that understands natural language commands and co
 ## Examples
 
 ```
-💬 You: create a file called shopping.txt
-🔄 Interpreted as: touch "shopping.txt"
-✅ Command executed successfully.
+User: create a file called shopping.txt
+Interpreted as: touch "shopping.txt"
+Status: Command executed successfully.
 
-💬 You: go to Documents folder
-🔄 Interpreted as: cd "Documents"
-✅ Output: Changed directory to: C:\Users\User\Documents
+User: go to Documents folder
+Interpreted as: cd "Documents"
+Output: Changed directory to: C:\Users\User\Documents
 
-💬 You: list all files
-🔄 Interpreted as: dir
-✅ Output: [Directory listing...]
+User: list all files
+Interpreted as: dir
+Output: [Directory listing...]
 
-💬 You: show me the current time
-🔄 Interpreted as: echo %DATE% %TIME%
-✅ Output: Thu 03/12/2026  14:30:25.42
+User: show me the current time
+Interpreted as: echo %DATE% %TIME%
+Output: Thu 03/12/2026  14:30:25.42
 ```
 
 ## Architecture
@@ -179,13 +179,13 @@ self.colors = {
 
 ## Future Enhancements
 
-- 🔮 AI model integration (GPT, Claude)
-- 🌐 Cross-platform support (Linux, macOS)
-- 📝 Command scripting and macros
-- 🔌 Plugin system for extensions
-- 💾 Enhanced settings and preferences
-- 🎯 Context-aware suggestions
-- 📊 Usage analytics and insights
+- AI model integration (GPT, Claude)
+- Cross-platform support (Linux, macOS)
+- Command scripting and macros
+- Plugin system for extensions
+- Enhanced settings and preferences
+- Context-aware suggestions
+- Usage analytics and insights
 
 ## License
 
@@ -202,4 +202,4 @@ Contributions welcome! Areas for improvement:
 
 ---
 
-**Enjoy using Babell!** 🚀
+**Babell** - Professional natural language terminal interface.
